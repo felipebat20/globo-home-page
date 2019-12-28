@@ -1,11 +1,44 @@
 @charset "utf8";
+@font-face {
+    font-family: Proxima Nova;
+    src: url(../_fonts/proxima-nova.otf);
+}
+
 
 /* Formatando a nav bar */
+
+.header-part1 {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    border: olive 1px dotted;
+    background-color: #F3F3F3;
+    height: 40px;
+}
+
+.navbar {
+    position: relative;
+    border: red dotted 1px;
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: left;
+    padding: auto;
+}
+
+.navbar1 {
+    position: relative;
+    border: red dotted 1px;
+    width: 100%;
+    float: right;
+}
 
 .sitesparc {
     list-style-type: none;
     position: relative;
     display: flex;
+    padding: auto;
     left: -40px;
     top: -10px;
 }
@@ -17,5 +50,44 @@ ul.sitesparc li {
     font-weight: bold;
     letter-spacing: 0.3px;
     line-height: 13.3px;
-    margin: 10px;
+    /* margin: 10px; */
+    padding: 5px;
+}
+
+ul.userFunctions {
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding-right: 10px;
+    top: -10px;
+}
+
+ul.userFunctions li {
+    position: relative;
+    margin: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-family: Proxima Nova;
+    font-size: 12pt;
+    font-weight: 200;
+    line-height: 10px;
+    letter-spacing: 0px;
+    color: #999999;
+}
+
+ul.userFunctions li a {
+    position: relative;
+    text-decoration: none;
+    margin-top: -20px;
+    font-family: Proxima Nova;
+    font-size: 12pt;
+    line-height: 10px;
+    letter-spacing: 0px;
+    color: #666666;
+    border: 1px solid #999999;
+    border-radius: 5pt;
+    box-sizing: border-box;
+    padding: 3px;
 }
