@@ -4,6 +4,12 @@
     src: url(../_fonts/proxima-nova.otf);
 }
 
+div.interface {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 
 /* Formatando a nav bar */
 
@@ -12,7 +18,7 @@
     position: fixed;
     display: flex;
     flex-direction: row;
-    border: olive 1px dotted;
+    /* border: olive 1px dotted; */
     background-color: #F3F3F3;
     height: 40px;
     top: 0px;
@@ -20,7 +26,7 @@
 
 .navbar {
     position: relative;
-    border: red dotted 1px;
+    /* border: red dotted 1px; */
     width: 100%;
     float: left;
     display: flex;
@@ -30,7 +36,7 @@
 
 .navbar1 {
     position: relative;
-    border: red dotted 1px;
+    /* border: red dotted 1px; */
     width: 100%;
     float: right;
 }
@@ -71,7 +77,7 @@ ul.userFunctions li {
     margin-top: 10px;
     margin-right: 10px;
     font-family: Proxima Nova;
-    font-size: 12pt;
+    font-size: 10pt;
     font-weight: 200;
     line-height: 10px;
     letter-spacing: 0px;
@@ -83,7 +89,7 @@ ul.userFunctions li a {
     text-decoration: none;
     margin-top: -20px;
     font-family: Proxima Nova;
-    font-size: 12pt;
+    font-size: 10pt;
     line-height: 10px;
     letter-spacing: 0px;
     color: #666666;
@@ -91,4 +97,12 @@ ul.userFunctions li a {
     border-radius: 5pt;
     box-sizing: border-box;
     padding: 3px;
+}
+
+div.principal {
+    margin-top: 35px;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background: #C4170C url('../_images/logo2.png') no-repeat center 10px;
 }
