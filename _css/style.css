@@ -110,7 +110,7 @@ div.principal {
     position: fixed;
     width: 100%;
     height: 80px;
-    background: #C4170C url('../_images/logo2.png') no-repeat center 10px;
+    background: #C4170C url('../_images/logo2.png') no-repeat center 45%;
 }
 
 div.pesquisa {
@@ -118,13 +118,29 @@ div.pesquisa {
     display: flex;
     float: right;
     height: 100%;
+    padding-right: 20px;
 }
 
 div.pesquisa input {
     position: relative;
-    height: 20px;
+    height: 35px;
     margin: auto;
     background-color: #A7140A;
     border: none;
     color: #ffffff;
+    border-radius: 2%;
+}
+
+::-webkit-input-placeholder {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+body {
+    position: absolute;
+    margin: 0 auto;
 }
