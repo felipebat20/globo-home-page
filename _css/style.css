@@ -4,16 +4,21 @@
     src: url(../_fonts/proxima-nova.otf);
 }
 
-header {
-    width: 100%;
-    position: fixed;
-    margin: 0 auto;
+@font-face {
+    font-family: Open Sans Regular;
+    src: url('../_fonts/OpenSans-Regular.ttf');
 }
 
-div.interface {
-    display: flex;
-    flex-direction: column;
+body {
+    position: absolute;
+    margin: 0 auto;
     width: 100%;
+}
+
+header {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
 }
 
 
@@ -21,12 +26,13 @@ div.interface {
 
 .header-part1 {
     width: 100%;
-    position: fixed;
+    height: 40px;
+    padding-top: 5px;
+    position: relative;
     display: flex;
     flex-direction: row;
     /* border: olive 1px dotted; */
     background-color: #F3F3F3;
-    height: 40px;
     top: 0px;
 }
 
@@ -43,7 +49,7 @@ div.interface {
 .navbar1 {
     position: relative;
     /* border: red dotted 1px; */
-    width: 100%;
+    width: 50%;
     float: right;
 }
 
@@ -106,11 +112,12 @@ ul.userFunctions li a {
 }
 
 div.principal {
-    margin-top: 35px;
-    position: fixed;
+    margin: 0 auto;
+    position: relative;
     width: 100%;
-    height: 80px;
-    background: #C4170C url('../_images/logo2.png') no-repeat center 45%;
+    height: 65px;
+    background: #C4170C url('../_images/logo2.png') no-repeat center;
+    background-size: 5%;
 }
 
 div.pesquisa {
@@ -128,19 +135,56 @@ div.pesquisa input {
     background-color: #A7140A;
     border: none;
     color: #ffffff;
-    border-radius: 2%;
+    border-radius: 5px;
 }
 
 ::-webkit-input-placeholder {
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 600;
-    padding-top: 20px;
+    padding-top: 45px;
     padding-left: 30px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
-body {
-    position: absolute;
+h4 {
+    font-family: Open Sans Regular;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.col-11 {
+    position: relative;
+    width: 1200px;
     margin: 0 auto;
+    height: 100%;
+}
+
+div.secao1 {
+    position: relative;
+    border: 1px solid #C8C8C8;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.secao1part1 {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding-left: 20px;
+    font-family: Open;
+}
+
+.secao1part2 {
+    position: relative;
+    width: 50%;
+    padding-right: 20px;
+}
+
+.secao1part2 h4 {
+    position: relative;
+    text-align: right;
 }
