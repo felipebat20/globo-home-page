@@ -151,6 +151,11 @@ h4 {
     font-family: Open Sans Regular;
     margin-top: 10px;
     margin-bottom: 10px;
+    color: #C4170C;
+}
+
+h4:hover {
+    color: #A6130A;
 }
 
 div.col-11 {
