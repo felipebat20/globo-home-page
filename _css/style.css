@@ -9,6 +9,15 @@
     src: url('../_fonts/OpenSans-Regular.ttf');
 }
 
+* {
+    font-size: 100%;
+    font-family: Open Sans Regular;
+}
+
+a {
+    margin: 0 auto;
+}
+
 body {
     position: absolute;
     margin: 0 auto;
@@ -160,7 +169,7 @@ h4:hover {
 
 div.col-11 {
     position: relative;
-    width: 1200px;
+    width: 90%;
     margin: 0 auto;
     height: 100%;
 }
@@ -192,4 +201,120 @@ div.secao1 {
 .secao1part2 h4 {
     position: relative;
     text-align: right;
+}
+
+img {
+    width: 100%;
+}
+
+.painel-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.destaque-maior {
+    position: relative;
+    margin: 1%;
+    box-sizing: border-box;
+}
+
+.destaque-maior:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.info-noticia {
+    position: absolute;
+    width: 100%;
+    bottom: 15%;
+    z-index: 99;
+}
+
+.destaque-maior h1 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -2.5px;
+    padding: 0 4%;
+    margin: 1% auto;
+}
+
+.destaque-maior p {
+    position: absolute;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 4%;
+    margin: 1% auto;
+}
+
+.destaque-menor {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.destaque-menor-1:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.destaque-menor-2:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.destaque-menor-1 {
+    position: relative;
+    margin: 2%;
+    background: url('../_images/tabajara.jpg') center center no-repeat;
+}
+
+.destaque-menor p {
+    position: absolute;
+    top: 0%;
+    left: 3%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 99;
+}
+
+.destaque-menor h3 {
+    position: absolute;
+    bottom: 0%;
+    left: 3%;
+    color: #fff;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -2px;
+    font-weight: 600;
+    z-index: 99;
+}
+
+.destaque-menor-2 {
+    margin: 2%;
+    position: relative;
+    background: url('../_images/embratur-relato.jpeg') center center no-repeat;
+}
+
+.painel-inferior {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
