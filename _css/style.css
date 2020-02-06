@@ -12,6 +12,7 @@
 * {
     font-size: 100%;
     font-family: Open Sans Regular;
+    margin: 0;
 }
 
 a {
@@ -216,7 +217,7 @@ img {
 
 .destaque-maior {
     position: relative;
-    margin: 1%;
+    margin: 2% 1%;
     box-sizing: border-box;
 }
 
@@ -316,5 +317,110 @@ img {
 
 .painel-inferior {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2.25fr 1fr;
+    gap: 3%;
+    margin: 3% 0;
+}
+
+.noticia-linear-card {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    grid-gap: 16px;
+    margin: 1% 0;
+    padding: 4% 0;
+    border-bottom: 1px solid #666666;
+}
+
+.noticia-linear-card img {
+    display: grid;
+    grid-row: span 4;
+}
+
+.noticia-linear-card h1 {
+    color: #C4170C;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.3px;
+    cursor: pointer;
+}
+
+.noticia-linear-card h1:hover {
+    text-decoration: underline #A6130A;
+    color: #A6130A;
+}
+
+.noticia-linear-card p {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    color: #555555;
+    cursor: pointer;
+}
+
+.noticia-linear-card p:hover {
+    text-decoration: underline #555555;
+}
+
+.noticia-linear-card h6 {
+    color: #555555;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0px;
+    font-weight: 300;
+    cursor: text;
+}
+
+.noticia-linear-card h6:hover {
+    text-decoration: underline #555555;
+}
+
+
+/* Área lateral  */
+
+.podcast {
+    border: 1px solid #C8C8C8;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
+.podcast-card {
+    display: flex;
+    flex-direction: row;
+    padding: 7.55% 0;
+    border-bottom: 1px solid #C8C8C8;
+}
+
+.podcast h1 {
+    padding: 4% 5%;
+    font-size: 16px;
+    color: #333333;
+    border-bottom: 1px solid #C8C8C8;
+}
+
+.podcast-session {
+    padding: 0 4%;
+}
+
+.podcast-text h2 {
+    margin-bottom: 4%;
+    font-size: 15px;
+}
+
+.podcast-text p {
+    color: #C4170C;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.podcast img {
+    width: 94px;
+    height: 94px;
+    margin-left: 5%;
+}
+
+.podcast h3 {
+    padding: 4% 5%;
+    font-size: 14px;
+    color: #C4170C;
+    font-weight: 600;
 }
