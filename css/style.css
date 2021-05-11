@@ -1,12 +1,12 @@
 @charset "utf8";
 @font-face {
     font-family: Proxima Nova;
-    src: url(../_fonts/proxima-nova.otf);
+    src: url(../fonts/proxima-nova.otf);
 }
 
 @font-face {
     font-family: Open Sans Regular;
-    src: url('../_fonts/OpenSans-Regular.ttf');
+    src: url('../fonts/OpenSans-Regular.ttf');
 }
 
 * {
